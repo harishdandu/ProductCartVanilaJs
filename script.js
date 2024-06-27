@@ -236,4 +236,8 @@ function removeProduct(id){
       badgeCount.textContent=cartItems.length
       renderCart(cartItems)
       calculateSubTotal()
+      if(cartItems.length==0){
+        noItem.classList.remove('d-none')
+        cartSection.classList.add('d-none')
+        }
 }
