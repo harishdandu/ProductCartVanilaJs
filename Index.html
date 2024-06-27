@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My JavaScript Example</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+   <div>
+    <header data-bs-theme="dark" class="top-fixed header" id="header">
+        <div class="text-bg-dark collapse" id="navbarHeader">
+        </div>
+        <div class="navbar navbar-dark bg-dark shadow-sm">
+          <div class="container">
+            <p class="navbar-brand m-0 d-flex align-items-center closeCart" id="closeCart">
+              <strong class="closeCart">Let's Shop</strong>
+            </p>
+            <button  class="btn d-flex align-items-center showCart" id="showCart">
+              <i class="fa fa-2x fa-shopping-cart showCart" aria-hidden="true"></i><span class="badge text-bg-danger move rounded-pill showCart" id="badgeCount"></span>
+            </button>
+          </div>
+        </div>
+      </header>
+
+<!-- Products list section -->
+
+    <div class="product" id="productBlock"> 
+        <section class="text-center container pt-5">
+        <div class="row py-lg-3">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">Welcome to Let's Shop!</h1>
+            <p class="lead text-body-secondary">You are few click away to buy best things on online market.</p>
+    
+          </div>
+        </div>
+      </section>
+      <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+          <div class="row" id="productsList">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- cart section -->
+
+    <div class="container cart-container d-none" id="cartBlock">
+        <div class="CartContainer mx-auto d-flex flex-column p-3" id="cart_section">
+          <div class="Header">
+            <h3 class="Heading">Shopping Cart</h3>
+          </div>
+      
+          <div id="cartList">
+          </div>
+          <hr class="ms-auto">
+          <div class="checkout ms-auto">
+            <div class="total">
+              <div>
+                <div class="Subtotal">Sub-Total</div>
+                <div class="items" id="items"></div>
+              </div>
+              <div class="total-amount" id="subtotal">$0</div>
+            </div>
+            <button class="button">Checkout</button>
+          </div>
+        </div>
+        <div id="noItem">
+          <h1>Cart is Empty</h1>
+        </div>
+      
+      </div>
+
+   </div>
+    <script src="script.js"></script>
+</body>
+</html>
